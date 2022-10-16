@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+    <title> ExpoEgypt </title>
+    <style>
+        body {
+            background-color: #053c66;
+            color: #fff8df; /*color elketaba nafsaha*/
+            font-family: Papyrus;
+            font-weight: bold;
+            word-spacing: 3px;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 50px;
+            /* line-height: 1.8em; */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding-top: 10;
+            overflow: hidden;
+            background-color: rgb(20, 7,40); /*color elnav bar*/
+        }
+
+        li {
+            float: left;
+            text-align: center;
+            padding: 14px 20px;
+            font-family: Papyrus;
+        }
+
+        #mm {
+            border: none;
+            margin-left: 0px;
+            font-family: Papyrus;
+            font-size: 115%;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width: 150px;
+            height: 60px;
+            background-color: rgb(20, 7,40); /*color lnav bar bardo*/
+            color: #fff8df; /* color elketaba 3ala elnav bar*/
+        }
+
+            #mm:hover {
+                background-color: #e94820; /* hover elnav bar */
+                border-radius: 30px;
+            }
+
+        .drpdwn {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .elmnts2 {
+            display: none;
+            background-color: burlywood; /*color elbackground bta3t login*/
+            border-radius: 30px;
+            transition-duration: 0.4s;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            position: absolute;
+            top: 75px;
+            margin-left: 25px;
+        }
+
+            .elmnts2 a {
+                color: rgb(53, 53, 53); /*color elketaba 3ala log in*/
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                font-family: Papyrus;
+                transition-duration: 0.2s;
+                cursor: pointer;
+            }
+
+        .drpdwn:hover, .drpdwn:hover .elmnts2 {
+            display: block;
+        }
+
+        .elmnts2 a:hover {
+            background-color: #e94820;
+            color: #fff8df;
+            border-radius: 200px;
+        }
+
+        .mainSen {
+            color: #053c66; /* a call to all explorers*/
+            text-align: center;
+            margin-top: 150px;
+            font-family: Papyrus;
+            font-size: 160%;
+            font-weight: 1200px;
+            position: static;
+            word-spacing: 35px;
+            line-height: 80px;
+            transform: skewY(-3deg);
+            transform-origin: bottom left;
+            text-shadow: 0px -2px 3px tomato, -1px -2px 3px tomato, -2px -2px 3px tomato, -1px -3px 3px tomato, -2px -3px 3px tomato, -3px -3px 3px tomato, -2px -4px 2px tomato, -3px -4px 2px tomato, -4px -4px 2px tomato, -3px -5px 1px tomato, -4px -5px 1px tomato, -5px -5px 1px tomato;
+        }
+
+        p {
+            font-family: Papyrus;
+            font-size: 185%;
+            text-align: center;
+            text-shadow: 0px -2px 3px gray, -1px -2px 3px gray, -2px -2px 3px gray;
+        }
+
+        .Hello {
+            color: lightskyblue;
+            font-size: 300%;
+            font-weight: bolder;
+            text-align: center;
+            text-shadow: 0px -2px 3px tomato, -1px -2px 3px tomato, -2px -2px 3px tomato, -1px -3px 3px tomato, -2px -3px 3px tomato, -3px -3px 3px tomato, -2px -4px 2px tomato, -3px -4px 2px tomato, -4px -4px 2px tomato, -3px -5px 1px tomato, -4px -5px 1px tomato, -5px -5px 1px tomato;
+        }
+
+        .Places a 
+            
+
+        {
+            font-size: 200%;
+            font-weight: bolder;
+            color: #e94820;
+            line-height: 55px;
+            text-decoration: none;
+            text-shadow: 0px -2px 3px salmon, -1px -2px 3px salmon, -2px -2px 3px salmon;
+        }
+
+        .Places a:hover {
+            color: rgb(160, 29, 6);
+        }
+
+        .Places a:active {
+            text-decoration: underline;
+            color: chocolate;
+        }
+
+       #ft {
+            text-align: center;
+            font-weight: 100;
+            color: lightslategrey;
+           
+        
+        }
+        #ddv {
+            position: absolute;
+            margin-bottom: 0px;
+            margin-left: 550px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <button id="mm" onclick="document.location = 'file:///C:/Users/maria/OneDrive/Documents/HOME.html';">
+                &#9770; Home &#9770;
+            </button>
+        </li>
+        <li>
+            <button id="mm" onclick="document.location = 'file:///C:/Users/maria/OneDrive/Documents/Up1date.html';">
+                &#9770; Updates &#9770;
+            </button>
+        </li>
+        <li>
+            <div class="drpdwn">
+                <button id="mm"> &#9770; Start Here &#9770; </button>
+                <div class="elmnts2">
+                    <a href="file:///C:/Users/maria/OneDrive/Documents/login.html"> &#9770; Log in </a>
+                    <a href="file:///C:/Users/maria/OneDrive/Documents/signup.html"> &#9770; sign up </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <button id="mm" onclick="document.location = 'file:///C:/Users/maria/OneDrive/Documents/aboutit.html';">
+                &#9770; About &#9770;
+            </button>
+        </li>
+    </ul>
+
+    <div class="mainSen">
+        <h1>
+            A CALL TO ALL THE
+            <br /> EXPLORERS OUT THERE
+        </h1>
+    </div>
+    <br>
+
+    <p>
+        Visiting egypt soon? Not sure where to start? we've got you covered,
+        <br />
+        our website offers a tourist-friendly guide to egypt, to Kickstart an unforgettable journey.
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="Hello">  Choose a City to Explore! </div>
+        <br>
+    </p>
+    <div class="Places">
+        <a style="color:#fff8df; position:relative; margin-left:550px;
+       text-shadow:
+            0px -2px 3px gray,
+            -1px -2px 3px gray,
+            -2px -2px 3px gray;" href="file:///C:/Users/maria/OneDrive/Documents/Alex.html">1. Alexandria</a><br>
+
+        <a style="position:relative; margin-left:490px;" href="file:///C:/Users/maria/OneDrive/Documents/Asswan.html">2. Aswan</a>
+
+        <a style="position:relative; margin-left:100px;" href="file:///C:/Users/maria/OneDrive/Documents/Cairo.html">3. Cairo</a><br>
+
+        <a style="color:#fff8df; position:relative; margin-left:430px;
+       text-shadow:
+            0px -2px 3px gray,
+            -1px -2px 3px gray,
+            -2px -2px 3px gray" href="file:///C:/Users/maria/OneDrive/Documents/fayoom.html">4. El Fayoum</a>
+
+        <a style="color:#fff8df; position:relative; margin-left:125px;
+       text-shadow:
+            0px -2px 3px gray,
+            -1px -2px 3px gray,
+            -2px -2px 3px gray" href="file:///C:/Users/maria/OneDrive/Documents/Giza.html">5.Giza</a><br>
+
+        <a style="position:relative; margin-left:370px;" href="file:///C:/Users/maria/OneDrive/Documents/Lxr.html">6. Luxor</a>
+
+        <a style="position:relative; margin-left:290px;" href="file:///C:/Users/maria/OneDrive/Documents/Matrouh.html">7. Marsa Matroh</a><br>
+
+        <a style="color:#fff8df; position:relative; margin-left:300px;
+       text-shadow:
+            0px -2px 3px gray,
+            -1px -2px 3px gray,
+            -2px -2px 3px gray;" href="file:///C:/Users/maria/OneDrive/Documents/wadi.html">8.New Valley</a>
+
+        <a style="color:#fff8df; position:relative; margin-left:325px;
+       text-shadow:
+            0px -2px 3px gray,
+            -1px -2px 3px gray,
+            -2px -2px 3px gray" href="file:///C:/Users/maria/OneDrive/Documents/N.sinai.html">9. North Sinai</a><br>
+
+        <a style="position:relative; margin-left:250px;" href="file:///C:/Users/maria/OneDrive/Documents/portsaid.html">10. Portsaid</a>
+        <a style="position:relative; margin-left:120px;" href="file:///C:/Users/maria/OneDrive/Documents/Redsea.html">11. Red Sea</a>
+        <a style="position:relative; margin-left:110px;" href="file:///C:/Users/maria/OneDrive/Documents/S.sinai.html">12. South Sinai</a>
+    </div>
+    <div id="ddv">
+        <footer id="ft">
+
+            Copyright &copy; 2021 FCIS by a group of srudents, All rights reserved.
+            <br>
+            Powered by ASU.
+
+        </footer>
+    </div>
+</body>
+</html>

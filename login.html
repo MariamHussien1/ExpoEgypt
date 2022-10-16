@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="bg.css" />
+    <style>
+
+body {
+background-color: #053c66;
+ margin: 0;
+ color: #fff8dc;
+font-family: Papyrus;
+ font-weight: bold;
+ margin-bottom: 40px;
+}
+
+#bck {
+    background-color: rgb(20, 7,40);
+    border: 2px solid;
+    border-color: rgb(12, 4, 24);
+    margin-left: 850px;
+    font-size: 100%;
+    font-weight: bold;
+    margin-right: auto;
+    width: 170px;
+    height: 90px; 
+    color:#fff8df;
+    font-family:Papyrus;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -500px;
+}
+#bck:hover{
+    padding: 5px;
+    background-color:#e94820;  /* hover elnav bar */
+    border-color:#c03a19 ;
+    color: #fff8df;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+
+}
+
+.Header 
+    {
+     color:#fff8df;
+     size: 175%;
+     font-family: papyrus;
+     font-weight:1500px;
+     text-transform: capitalize;
+     word-spacing: 0.7em;
+     background-color:rgb(20, 7,40);
+     border-right:10px rgb(20, 7,40) solid ;
+     border-left: 50px rgb(20, 7,40) solid;
+     border-top: 10px rgb(20, 7,40) solid;
+     border-bottom: 10px rgb(20, 7,40) solid;
+    }
+
+.copyrights h2
+{
+    font-family: papyrus;
+    font-size: 12px;
+    text-align-last: center;
+    color:gray;
+    line-height: 12px;
+}
+#ff p{
+    text-align: center;
+    max-width: 500px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px #053c66;
+    padding: 2rem;
+    font-size: 100%;
+}
+#ff label{
+    text-transform: uppercase;
+    color: lightskyblue;
+    font-family: Papyrus;
+    line-height: 2.5em;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 
+    0px -2px 3px tomato,
+    -1px -2px 3px tomato,
+    -2px -2px 3px tomato;
+}
+
+#ff input{
+    width: 400px;
+    border: 1px #e94820 solid;
+    padding: 10px;
+    border-radius: 5px ;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="Header">
+        <h1>&#8608 Log in and enjoy The extra Features &#8606  </h1>
+    </div>
+    <form id="ff" style="text-align:center;" onsubmit="validate()">
+        <p style="font-size:100%;">
+            <label id="usrname">Enter your Username : </label>
+            <input type="text" id="usrName" name="usrName" required><br><br /><br />
+            <label id="ps">Enter Password : </label>
+            <input type="password" id="pswrd" name="pswrd" required><br><br /><br />
+            </p>
+        <button id="bck" onclick="validate()">Login and get back to home page!</button>
+
+    </form>
+    <footer class="copyrights">
+        <h2> Copyright &copy; 2021 FCIS by a group of srudents, All rights reserved. </h2>
+       <h2>Powered by ASU.</h2> 
+     </footer>
+
+    <script>
+        var name = document.getElementById("usrname").innerHTML;
+        var pwrd = document.getElementById("ps").innerHTML;
+       
+        function validate() {
+
+
+            if (name !== "") {
+                alert("successfully logged in ");
+                window.location.replace("file:///C:/Users/maria/OneDrive/Documents/Hoome2.html");
+            
+        }
+    </script>
+</body>
+
+</html>
